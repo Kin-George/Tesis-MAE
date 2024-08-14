@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Tesis</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,8 +16,104 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/fondo.png?raw=true">
+					<h2 class="titulos" style="font-size:38px">Movilidad y Crimen: Caso Colombiano</h1>
+						<h3 style="font-size:30px">Jorge Mario Orozco Thomas</h3>
+						<h3 style="font-size:25px">Director de tesis: Carlos Diaz</h3>
+						<h3 style="font-size:20px">Agosto - 2024</h3>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2 style="font-size:60px">Contenido</h2>
+					<ul style="list-style-type:'🔎'">
+						<li>Introducción</li>
+						<li>Objetivos</li>
+						<li>Metología</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2> Introducción </h2>
+					<ul style="list-style-type:'🚓'">
+						<li>Tasa de homicidio:</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:60px">Introducción</h2>
+					<ul style="list-style-type:'🗡️'">
+						<li>Tasa de homicidio:
+							<ul style="list-style-type:'📈'">
+								<li>En el 1991: 85%</li>
+								<li>En el 2002: 70%</li>
+							<ul style="list-style-type:'📉'">
+								<li>En el 2012: 36%</li>
+								<li>En el 2020: 24%</li>
+							</ul>
+					</ul> 
+						<ul style="list-style-type:'🤔'">
+							<li>¿Como ha impactado en las familias colombianas este fenomeno de criminalidad generalizado en decisiones de movilidad?</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section data-auto-animate >
+					<h2 style="font-size:60px"> Introducción </h2>
+					<ul style="list-style-type:'✔'">
+						<li>Modelo logistico</li>
+						<ul style="list-style-type:'⚙'">
+							<li>Probabilidad de abandonar el hogar parcial o permanentemente</li>
+							<li>Decisiones diferenciales por los ingresos del hogar</li>
+							<li>Percepcion de la seguridad territorial</li>
+						</ul>
+						<li>Datos</li>
+							<ul style="list-style-type:'⚙'">
+								<li>Encuesta Longitudinal Colombiana (ELCA)</li>
+								<li>Encuesta de Convivencia y Seguridad Ciudadana (ECSC)</li>
+							</ul>
+						<li>Diagnosticar, evaluar y comprender la relación entre crimen y decisiones de movilidad en los hogares</li>
+					</ul>
+				</section>
+
+				<section data-transition="zoom">
+					<h2 style="font-size:60px">Objetivo General</h2>
+					<p style="text-align:justify; font-size: 40px;" >Realizar un modelo de regresión logistico para entender las decisiones de movilidad en los hogares colombianos debido a un clima de criminalidad.</p>
+				</section>
+
+				<section data-transition="zoom"> 
+					<h2 style="font-size:60px">Objetivos Especificos</h2>
+					<ul style="list-style-type:'✔'">
+						<li>Caracterizar la criminalidad colombiana</li>
+						<li>Determinar la influencia de un ambiente inseguro en las decisiones de movilidad</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="border: 10px solid #ffffff;border-radius: 20px;font-size:60px;">Caracterización y evolución de la criminalidad en Colombia</h2>
+				</section>
+
+				<section>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/homicidio_evolucion.gif?raw=true" alt="Grafico animado 1", width="95%">
+					<p  style="font-size:30px;text-align: justify">😶 En 1991: <b>85 HOMICIDIOS</b> por cada 100.000 hab. </br> 🤐 Apenas en 2020: <b>24 HOMICIDIOS</b> por cada 100.000 hab.</p>
+				</section>
+
+				<section> 
+					<img style="width:100%;" src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/Homicidios_Comparativa.png?raw=true" alt="Segunda grafica">
+					<p style="font-size:30px; text-align: justify;">🫠 <b>Colombia</b> ha sido pais con un comportamiento historico extremadamente violento.</p>
+				</section>
+
+				<section>
+					<img style="width:100%" src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/desplazados_evolucion.gif?raw=true" alt="Tercera grafica">
+					<p style="font-size:23px; text-align: justify;">🏃‍♂️ La población desplazada debido a este ambiente de criminalidad ha llegado a ser del <b>15%</b>, en 2016 el número de desplazados asciende a 7.246.000 personas.</p>
+				</section>
+
+				<section>
+					<h2 style="font-size:30px;"">En resumen...</h2>
+					<p style="font-size:30px;text-align: justify;">❌ Colombia enfrenta una problematica de violencia que ha afectado, y aun afecta a su población desde diferentes dimensiones.</p>
+					<p style="font-size:30px;text-align: justify;">❌ Este ambiente conflictivo puede tener una relación con las decisiones de movilidad de los colombianos.</p>
+					<p style="font-size:30px;text-align: justify;">❌ ¿Que pasa con aquellos hogares que no cuentan con los recursos para escapar de esta violencia?</p>
+					<p style="font-size:30px;text-align: center;">❗ Pese a todo, un gran numero de colombianos ha permanecido en el pais, ¿cuales son sus caracteristicas, que explica la decisión de movilidad debido al conflicto en Colombia?❕</p>
+				</section>
 			</div>
 		</div>
 
