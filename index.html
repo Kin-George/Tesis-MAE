@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tesis</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/fondo.png?raw=true">
+					<h2 class="titulos" style="font-size:38px">Synthetic control: The Colombian case</h1>
+						<h3 style="font-size:30px">Jorge Mario Orozco Thomas</h3>
+						<h3 style="font-size:25px">Thesis Advisor: Carlos Díaz</h3>
+						<h3 style="font-size:20px">October - 2024</h3>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2 style="font-size:60px">Outline</h2>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2 style="font-size:60px">Outline</h2>
+					<ul style="list-style-type:'🔎'">
+						<li>Justification</li>
+						<li>Research Question</li>
+						<li>Literature review</li>
+						<li>Data and Method</li>
+						<li>Findings</li>
+						<li>Final Remarks</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2 style="font-size:30px">Revealing Numbers about Armed Conflict (80's, 90's, 2000's) according to "Comisión de la Verdad" (2023)</h2>
+					<ul style="list-style-type:'😶'; font-size: 25px;">
+						<li>Homicides: 450.664 persons</li>
+						<li>Enforced disappearances: 121.768 persons</li>
+						<li>Kidnapping: 50.770 people</li>
+						<li>Recruitment of children and adolescents: 16.238 persons</li>
+						<li>Forced displacement: 752.965 persons</li>
+						<li>They show the negative impact of the armed conflict on the real sector of the economy with a lag of five months. (Kutan & Yaya, 2016)</li>
+					</ul>
+					<p style="font-size: 25px; text-align: justify;">However, there are studies and estimates of the economic cost of the conflict at the sub-national level, agriculture, land use, etc., but there is still no informative measure of the economic cost at the aggregate level (GDP per capita, its growth and trajectory).</p>
+				</section>
+
+				<section data-transition="zoom">
+					<h2 style="font-size:60px">Research Question</h2>
+					<p style="text-align:justify; font-size: 40px;" >🤔 How would the Colombian GDP per capita have behaved if we isolated the impact of the armed conflict?</p>
+				</section>
+
+				<section data-auto-animate="convex"> 
+					<h2 style="font-size:60px">Literature Review</h2>
+				</section>
+
+				<section data-auto-animate="convex"> 
+					<h2 style="font-size:40px">Literature Review</h2>
+					<ul style="list-style-type:'💭'; font-size: 25px;">
+						<li class="fragment" data-fragment-index="1">They find, after the outbreak of terrorism in the late 1960's, per capita GDP in the Basque Country declined about 10 percentage points relative to a synthetic control region without terrorism.  (Abadie & Gardeazabal, 2003)</li>
+						<li class="fragment" data-fragment-index="2">They construct a synthetic control for Turkey and by comparing the behavior of the GDP per capita of synthetic Turkey without terrorism with the real Turkey they find that in the period 1988-2008 the GDP per capita of synthetic Turkey would have been on average $1585 higher per year, translating into an average increase of 13.8% in GDP per capita. (Bilgel & Karahasan, 2016)</li>
+						<li class="fragment" data-fragment-index="3">They construct a synthetic control to isolate the effect of reunification in West Germany and find that reunification resulted in a reduction of $1600 per year on average during 1990 - 2003. (Abadie, Diamond & Hainmueller, 2015)</li>
+						<li class="fragment" data-fragment-index="4">He constructs a synthetic control to isolate the effect of Hugo Chavez's presidency on the behavior of key indicators of the Venezuelan economy, and finds that had Chavez not been elected, the Venezuelan economy would still have declined but not as deeply. (Maynard, 2015)</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:40px"> Data and Method </h2>
+					<ul style="list-style-type:'✔'; font-size: 25px;">
+						<li class="fragment" data-fragment-index="1">Synthetic Control</li>
+						<ul class="fragment" data-fragment-index="2" style="list-style-type:'⚙'">
+							<li>Weighted averages minimizing the distance function: $\sum_{m=1}^{k} V_{m}(X_{1m}-X_{0m} W)^{2}$</li>
+							<li>Donor Pools: units that have not been treated as of interest.</li>
+							<li>To avoid interpolation biases, it is important to restrict the donor pool to units with characteristics similar to the treated unit.  (Abadie, 2015)</li>
+							<li>Exclude any unit that was treated from the donor pool.</li>
+							<li>Predictors of interest and relevance</li>
+						</ul>
+						<li class="fragment" data-fragment-index="3">Data</li>
+							<ul class="fragment" data-fragment-index="4" style="list-style-type:'⚙'; font-size:25px;">
+								<li>Bolt and van Zanden - Maddison Project Database 2023</li>
+								<li>Barro, Robert Joseph, and Jong-wha Lee. 1994. “DataSet for a Panel of 138 Countries.”</li>
+								<li>Barro, Robert Joseph, and Jong-wha Lee. 2000. “International Data on Educational Attainment"</li>
+								<li>Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), "The Next Generation of the Penn World Table"</li>
+								<li>Global Terrorism Database (2022)</li>
+							</ul>
+						<li class="fragment" data-fragment-index="5">Isolate and quantify the economic cost of the Colombian armed conflict.</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Design</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/Fig2.gif?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">✅ countries that do not have a behavior of accentuated terrorist activity <br> Treatment Date: 1975</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Design</h2>
+					<ul style="list-style-type:'✅'; font-size: 25px;">
+						<li class="fragment" data-fragment-index="1">Components</li>
+						<ul class="fragment" data-fragment-index="2" style="list-style-type:'▶️'">
+							<li>Outcome Variable: GDP per capita</li>
+							<li>Predictors: Inflation rate, Investment rates, Human capital index, Human capital (Primary or without studies, Secondary, Terciary, Average years of schooling)</li>
+							<li>25-year pretreatment period</li>
+							<li>19 years post-treatment period</li>
+							<li>Donor Pool: Costa Rica, Cyprus, Dominican Republic, Ecuador, Gabon, Mauritius, Malaysia, Panama, Paraguay, Singapore, Uruguay</li>
+						</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Donor Pool</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/DonorPools2.png?raw=true" alt="Grafico animado 1", width="90%">
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:25px;">Findings</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/Findings.png?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">👍 the synthetic version of colombia experiences an increase in its per capita GDP</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Findings</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/findings2.png?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">👍 the difference between the GDP per capita of synthetic Colombia and its synthetic version is considerable.</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Weights</h2>
+					<p style="font-size:25px;">
+						$$ 
+						\begin{array}{|c|c|c|}
+						\hline
+						Country & Weight & Country & Weight \\
+						\hline
+						Costa Rica & 0.040 & Malaysia & 0.274\\
+						Cyprus & 0.118 & Panama & 0.026 \\
+						Dominican Republic & 0.028 & Paraguay & 0.274\\
+						Ecuador & 0.016 & Singapore & 0.049\\
+						Gabon & 0.032 & Uruguay & 0.120\\
+						Mauritius & 0.024\\
+						\hline
+						\end{array} 
+						$$
+					</p>
+				</section>
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Weights</h2>
+					<p style="font-size:25px;">
+						$$ 
+						\begin{array}{|c|c|c|}
+						\hline
+						Variable & Weight \\
+						\hline
+						Inflation Rate & 0.075\\
+						GDP & 0.431 \\
+						Investment rate & 0.007 \\
+						Secondary & 0.089 \\
+						Primary & 0.114 \\
+						Terciary & 0.014  \\
+						Human Capital Index & 0.264 \\
+						Average Years of Schooling & 0.007\\
+						\hline
+						\end{array} 
+						$$
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Performance</h2>
+					<p style="font-size: 25px;">
+						$$ 
+						\begin{array}{|c|c|c|}
+						\hline
+						Variable & Treated & Synthetic \\
+						\hline
+						Inflation Rate & 14.062 & 14.010\\
+						GDP & 5414.500 & 5413.766 \\
+						Investment rate & 0.175 & 0.180 \\
+						Secondary & 14.395 & 14.252 \\
+						Primary & 83.215 & 83.088 \\
+						Terciary & 2.390 & 2.344  \\
+						Human Capital Index & 1.713 & 1.713 \\
+						Average Years of Schooling & 3.620 & 3.565\\
+						\hline
+						\end{array} 
+						$$
+						</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">robustness test: Placebo</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/placebo3.png?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">👍 the increase in gdp per capita is not shown in the synthetic version</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">robustness test: Placebo (Backdating without inflation rate & Human Index)</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/placebo1.png?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">👍 the increase in gdp per capita is not shown in the synthetic version</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">robustness test: Placebo (Backdating with all variables but without 3 countries)</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/placebo2.png?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">👍 the increase in gdp per capita is not shown in the synthetic version</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">robustness test: In-Space Placebo (All countries & all variables)</h2>
+					<img fig-align:left src="https://github.com/Kin-George/Tesis-MAE/blob/main/docs/img/Leaveinout.png?raw=true" alt="Grafico animado 1", width="90%">
+					<p  style="font-size:25px;text-align: justify">👍 the result has causal significance</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:30px;">Final Remarks</h2>
+					<p  style="font-size:25px;text-align: justify">👍 We find consistency with the literature on the economic cost of the conflict in Colombia that the conflict has limited its economic growth.</p>
+				</section>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: 'c/t',
+				// Activate the scroll view
+  				view: 'scroll',
+
+				// Force the scrollbar to remain visible
+				scrollProgress: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
